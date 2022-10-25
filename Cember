@@ -1,0 +1,34 @@
+package Ders01;
+
+import java.util.Scanner;
+
+public class daireAlan {
+    public static void main(String[] args) {
+        double dAlan,dCevre;
+        double piSayisi=3.14;
+        double yariCap;
+        double aci;
+        double istenenAcininAlanı;
+
+
+
+
+        Scanner scan =new Scanner(System.in);
+        System.out.println("DAİRENİN YARIÇAPINI GİRİNİZ");
+        yariCap= scan.nextDouble();
+        Scanner scan1 =new Scanner(System.in);
+        System.out.println("DAİRENİN ALANINI İSTEDİĞİNİZ AÇIYI  GİRİNİZ");
+        aci= scan1.nextDouble();
+        // Alan Formülü : π * r * r;
+        //Çevre Formülü : 2 * π * r;
+        dAlan=piSayisi*yariCap*yariCap;
+        dCevre= 2*piSayisi*yariCap;
+        istenenAcininAlanı= dAlan*(aci/360);
+
+
+        System.out.println("DAİRENİN ALANI :" + "  " +dAlan    + "  " + "DAİRENİN CEVRESİ :" + dCevre  +  "İSTENEN AÇI NIN ALAANI"+ istenenAcininAlanı);
+
+
+
+    }
+}
